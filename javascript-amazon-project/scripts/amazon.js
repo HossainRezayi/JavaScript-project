@@ -43,12 +43,12 @@ products.forEach((product) => {
 
           <div class="product-spacer"></div>
 
-          <div class="added-to-cart js-added-to-card-${product.id}">
+          <div class="added-to-cart js-added-to-cart-${product.id}">
             <img src="images/icons/checkmark.png" />
             Added
           </div>
 
-          <button class="add-to-cart-button button-primary js-add-to-card" data-product-id="${
+          <button class="add-to-cart-button button-primary js-add-to-cart" data-product-id="${
             product.id
           }">Add to Cart</button>
         </div>`;
@@ -56,7 +56,7 @@ products.forEach((product) => {
 
 document.querySelector(".js-product-grid").innerHTML = productsHTML;
 
-document.querySelectorAll(".js-add-to-card").forEach((button) => {
+document.querySelectorAll(".js-add-to-cart").forEach((button) => {
   let addedMessageTimeoutId;
   button.addEventListener("click", () => {
     const { productId } = button.dataset;
@@ -65,7 +65,7 @@ document.querySelectorAll(".js-add-to-card").forEach((button) => {
       document.querySelector(`.js-quantity-selector-${productId}`).value
     );
     let matchingItem;
-    card.forEach((item) => {
+    cart.forEach((item) => {
       if (productId === item.productId) {
         matchingItem = item;
       }
@@ -74,21 +74,21 @@ document.querySelectorAll(".js-add-to-card").forEach((button) => {
     if (matchingItem) {
       matchingItem.quantity += quantity;
     } else {
-      card.push({
+      cart.push({
         productId,
         quantity,
       });
     }
 
-    let cardQuantity = 0;
-    card.forEach((item) => {
-      cardQuantity += item.quantity;
+    let cartQuantity = 0;
+    cart.forEach((item) => {
+      cartQuantity += item.quantity;
     });
 
-    document.querySelector(".js-card-quantity").innerHTML = cardQuantity;
+    document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
 
     const addedMessage = document.querySelector(
-      `.js-added-to-card-${productId}`
+      `.js-added-to-cart-${productId}`
     );
 
     addedMessage.classList.add("added-to-cart-visible");
