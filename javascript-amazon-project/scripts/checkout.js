@@ -4,7 +4,7 @@ import { renderPaymentSummary } from "./checkout/paymentSummary.js";
 // import "../data/cart-class.js";
 // import "../data/backend-practise.js";
 import { loadProducts, loadProductFetch } from "../data/products.js";
-import { loadCart } from "../data/cart.js";
+import { loadCart, loadCarFetch } from "../data/cart.js";
 
 async function loadPage() {
   try {
@@ -12,11 +12,7 @@ async function loadPage() {
 
     await loadProductFetch();
 
-    const value = await new Promise((resolve) => {
-      loadCart(() => {
-        resolve("value3");
-      });
-    });
+    await loadCarFetch();
   } catch (error) {
     console.log("Unexpected error. Please try again later.");
   }
