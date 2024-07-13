@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.thank-you-state {
+  display: none;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  background-color: hsl(216, 12%, 8%);
+  color: hsl(0, 0%, 100%);
+}
+
+.content {
+  max-width: 450px;
+  margin: 100px auto;
+  background-color: hsl(213, 19%, 18%);
+  padding: 20px;
+  border-radius: 11px;
+}
