@@ -12,7 +12,7 @@ body {
 }
 
 .content {
-  max-width: 600px;
+  max-width: 550px;
   background-color: hsl(0, 0%, 100%);
   padding: 30px;
   margin: 100px auto;
@@ -36,6 +36,7 @@ body {
 }
 
 .heading-secondry {
+  font-size: 16px;
   color: hsl(292, 42%, 14%);
 }
 
@@ -46,9 +47,11 @@ body {
   margin-bottom: 30px;
 }
 
-.paragraph {
+.paragraph-1,
+.paragraph-2,
+.paragraph-3,
+.paragraph-4 {
   margin-bottom: 20px;
-  padding-bottom: 20px;
   color: hsl(292, 16%, 49%);
   border-bottom: 1px solid hsl(275, 100%, 97%);
 }
@@ -56,4 +59,8 @@ body {
 .last-paragraph {
   border-bottom: none;
   margin-bottom: 0;
+}
+
+.text {
+  padding-bottom: 20px;
 }

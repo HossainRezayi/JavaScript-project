@@ -42,51 +42,109 @@
             <h2 class="heading-secondry">
               What is frontend mentor, and how it will help me?
             </h2>
-            <img src="assets/images/icon-plus.svg" alt="Plus icon" />
+            <img
+              src="assets/images/icon-plus.svg"
+              alt="Plus icon"
+              class="icon-1"
+              onclick="
+                const para = document.querySelector('.paragraph-1');
+              if(para.classList.contains('text')){
+                para.classList.remove('text');
+                para.innerHTML = '';
+                document.querySelector('.icon-1').src = 'assets/images/icon-plus.svg';              
+              }else{
+              document.querySelector('.icon-1').src = 'assets/images/icon-minus.svg';              
+              para.innerHTML = `Frontend Mentor offers realistic coding challenges to help
+              developers improve their frontend coding skills with projects in
+              HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+              for portfolio building.`
+              para.classList.add('text');
+              }
+              "
+            />
           </div>
-          <p class="paragraph">
-            Frontend Mentor offers realistic coding challenges to help
-            developers improve their frontend coding skills with projects in
-            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
-            for portfolio building.
-          </p>
+          <p class="paragraph-1"></p>
         </div>
         <div class="items">
           <div class="item__inner">
             <h2 class="heading-secondry">Is Frontend Mentor free?</h2>
-            <img src="assets/images/icon-plus.svg" alt="Plus icon" />
+            <img
+              src="assets/images/icon-plus.svg"
+              alt="Plus icon"
+              class="icon-2"
+              onclick="
+              const para_2 = document.querySelector('.paragraph-2');
+              if(para_2.classList.contains('text')){
+              para_2.classList.remove('text');
+              para_2.innerHTML = '';
+              document.querySelector('.icon-2').src = 'assets/images/icon-plus.svg';              
+              }else{
+              document.querySelector('.icon-2').src = 'assets/images/icon-minus.svg';              
+              para_2.innerHTML = `Yes, Frontend Mentor offers both free and premium coding challenges,
+              with the free option providing access to a range of projects
+              suitable for all skill levels.`
+              para_2.classList.add('text');
+              }
+              "
+            />
           </div>
-          <p class="paragraph">
-            Yes, Frontend Mentor offers both free and premium coding challenges,
-            with the free option providing access to a range of projects
-            suitable for all skill levels.
-          </p>
+          <p class="paragraph-2"></p>
         </div>
         <div class="items">
           <div class="item__inner">
             <h2 class="heading-secondry">
               Can I use Frontend Mentor projects in my portfolio?
             </h2>
-            <img src="assets/images/icon-plus.svg" alt="Plus icon" />
+            <img
+              src="assets/images/icon-plus.svg"
+              alt="Plus icon"
+              class="icon-3"
+              onclick="
+              const para_3 = document.querySelector('.paragraph-3');
+              if(para_3.classList.contains('text')){
+              para_3.classList.remove('text');
+              para_3.innerHTML = '';
+              document.querySelector('.icon-3').src = 'assets/images/icon-plus.svg';              
+              }else{
+              document.querySelector('.icon-3').src = 'assets/images/icon-minus.svg';              
+              const para_3 = document.querySelector('.paragraph-3');
+              para_3.innerHTML = `Yes, you can use projects completed on Frontend Mentor in your
+              portfolio. It's an excellent way to showcase your skills to
+              potential employers!`
+              para_3.classList.add('text');
+            }
+              "
+            />
           </div>
-          <p class="paragraph">
-            Yes, you can use projects completed on Frontend Mentor in your
-            portfolio. It's an excellent way to showcase your skills to
-            potential employers!
-          </p>
+          <p class="paragraph-3"></p>
         </div>
         <div class="items">
           <div class="item__inner">
             <h2 class="heading-secondry">
               How can I get help if I'm stuck on a Frontend Mentor challenge?
             </h2>
-            <img src="assets/images/icon-plus.svg" alt="Plus icon" />
+            <img
+              src="assets/images/icon-plus.svg"
+              alt="Plus icon"
+              class="icon-4"
+              onclick="
+              const para_4 = document.querySelector('.paragraph-4');
+              if(para_4.classList.contains('text')){
+              para_4.classList.remove('text');
+              para_4.innerHTML = '';
+              document.querySelector('.icon-4').src = 'assets/images/icon-plus.svg';              
+              }else{
+              document.querySelector('.icon-4').src = 'assets/images/icon-minus.svg';              
+              const para_4 = document.querySelector('.paragraph-4');
+              para_4.innerHTML = `The best place to get help is inside Frontend Mentor's Discord
+              community. There's a help channel where you can ask questions and
+              seek support from other community members.`
+              para_4.classList.add('text');
+            }
+              "
+            />
           </div>
-          <p class="paragraph last-paragraph">
-            The best place to get help is inside Frontend Mentor's Discord
-            community. There's a help channel where you can ask questions and
-            seek support from other community members.
-          </p>
+          <p class="paragraph-4 last-paragraph"></p>
         </div>
       </div>
     </div>
@@ -97,5 +155,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+
+    <script></script>
   </body>
 </html>
