@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-.thank-you-state {
-  display: none;
-}
-
 body {
   font-family: "Overpass", sans-serif;
   font-size: 15px;
@@ -15,10 +11,80 @@ body {
   color: hsl(0, 0%, 100%);
 }
 
-.content {
-  max-width: 450px;
+.active-state {
+  max-width: 390px;
   margin: 100px auto;
   background-color: hsl(213, 19%, 18%);
-  padding: 20px;
-  border-radius: 11px;
+  padding: 30px;
+  border-radius: 18px;
+}
+
+.icon-star {
+  padding: 12px;
+  border-radius: 50%;
+  background-color: hsl(214, 18%, 17%);
+  margin-bottom: 25px;
+}
+
+.heading-secondry {
+  margin-bottom: 20px;
+}
+
+.text {
+  margin-bottom: 20px;
+  color: hsl(217, 12%, 63%);
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.number {
+  padding: 12px 17px;
+  border-radius: 50%;
+  background-color: hsl(214, 18%, 17%);
+  text-decoration: none;
+  color: hsl(217, 12%, 63%);
+}
+
+.number:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(216, 12%, 8%);
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 0;
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 50px;
+  border: none;
+  color: hsl(216, 12%, 8%);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+/* Thank you state */
+
+.thank-you-state {
+  text-align: center;
+}
+
+.selection {
+  margin: 15px 0 30px 0;
+  display: inline-block;
+  padding: 7px 15px;
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(214, 18%, 17%);
+  border-radius: 50px;
+}
+
+.thank-text {
+  color: hsl(217, 12%, 63%);
 }

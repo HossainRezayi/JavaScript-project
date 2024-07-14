@@ -37,8 +37,8 @@
 
     <div class="content">
       <div class="active-state">
-        <img src="images/icon-star.svg" alt="Star icon" />
-        <h1 class="heading-primary">How did we do?</h1>
+        <img src="images/icon-star.svg" alt="Star icon" class="icon-star" />
+        <h2 class="heading-secondry">How did we do?</h2>
         <p class="text">
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
@@ -50,16 +50,22 @@
           <a href="#" class="number">4</a>
           <a href="#" class="number">5</a>
         </div>
-        <button class="btn">Submit</button>
-      </div>
-      <div class="thank-you-state">
-        <img src="images/illustration-thank-you.svg" alt="illustration icon" />
-        <p class="selection">You selected 4 out of 5</p>
-        <p class="thank-text">Thank you!</p>
-        <p class="thank-text">
-          We appreciate you taking the time to give a rating. If you ever need
-          more support, don’t hesitate to get in touch!
-        </p>
+        <button
+          class="btn"
+          onclick="
+        document.querySelector('.active-state').innerHTML = `<div class='thank-you-state'>
+          <img src='images/illustration-thank-you.svg' alt='illustration icon' />
+          <p class='selection'>You selected 4 out of 5</p>
+          <h2 class='heading-secondry'>Thank you!</h2>
+          <p class='thank-text'>
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+       </div>`;
+        "
+        >
+          Submit
+        </button>
       </div>
     </div>
     <!-- Rating state end -->
@@ -76,5 +82,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+
+    <script></script>
   </body>
 </html>
